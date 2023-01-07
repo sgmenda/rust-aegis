@@ -15,7 +15,7 @@
 #pragma GCC target("aes")
 #endif
 
-#ifdef __x86_64__
+#if defined(__x86_64__) || defined(_M_AMD64)
 
 #include <tmmintrin.h>
 #include <wmmintrin.h>
